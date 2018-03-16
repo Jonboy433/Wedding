@@ -1,0 +1,469 @@
+@import url("//fonts.googleapis.com/css?family=Meddon:400|Stint+Ultra+Expanded:400");
+#title-container {
+    background: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
+    margin: 0 5%
+}
+
+#cover-image {
+    border: 0px !important;
+    position: relative
+}
+
+#cover-image #title-container {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    z-index: 10;
+    margin: 0;
+    color: #fff;
+    transform: translateY(-50%);
+    padding: 0 !important
+}
+
+.event-description {
+    text-align: center
+}
+
+@media (min-width: 768px) {
+    .main-nav-container-container {
+        min-height: 0 !important
+    }
+    #main-nav-container {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        height: 84px
+    }
+}
+
+h2, #wedding-date-location, #wedding-countdown {
+    font-size: 1.25rem !important
+}
+
+@media (max-width: 767px) {
+    .main-nav-container-inner button.main-nav {
+        border: 0 !important;
+        font-size: 11px;
+        width: 47px;
+        height: 47px;
+        background: #FFF;
+        overflow: hidden;
+        text-indent: -100000px;
+        border-radius: 100%;
+        margin: 0;
+        position: fixed;
+        left: 9px;
+        top: 9px;
+        z-index: 1000;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4)
+    }
+    .main-nav:after, .main-nav:before {
+        content: "";
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        width: 60%;
+        margin-top: -0.15em;
+        height: 0.3em;
+        background: #000;
+        transition: all .4s;
+        box-shadow: 0 -0.7em 0 0 black, 0 0.7em 0 0 black
+    }
+    .main-nav:after {
+        box-shadow: 0 -0.7em 0 0 black, 0 0.7em 0 0 black
+    }
+    .nav-open .main-nav:after {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+        transform: rotateZ(45deg)
+    }
+    .nav-open .main-nav:before {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+        transform: rotateZ(-45deg)
+    }
+    body.nav-open {
+        overflow: hidden
+    }
+    .theme-image-container {
+        padding-bottom: 20%
+    }
+    #title-container {
+        padding-top: 10px
+    }
+    #main-nav {
+        margin-top: 0;
+        padding-top: 0;
+        background: rgba(0, 0, 0, 0.7);
+        height: 0%;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        opacity: 0;
+        transition: all .5s;
+        display: block;
+        overflow: hidden
+    }
+    #main-nav>ul>li {
+        padding: 20px 20px
+    }
+    #main-nav-container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 67px
+    }
+    .main-nav-container-container {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        margin-top: 0;
+        z-index: 50
+    }
+    #main-nav.visible {
+        opacity: 1;
+        height: 100%
+    }
+    .main-nav-hidden ul {
+        padding-top: 0px;
+        background: #fff;
+        color: #000;
+        box-shadow: 2px 0 5px black
+    }
+    #main-nav li a {
+        color: rgba(0, 0, 0, 0.6) !important;
+        transition: color .5s
+    }
+    #main-nav li a.selected, #main-nav li a:hover {
+        color: #000 !important
+    }
+    .main-nav-hidden ul:before {
+        content: "MENU";
+        text-align: center;
+        display: block;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        font-size: 1em;
+        letter-spacing: 1px;
+        height: 67px;
+        line-height: 67px;
+        background: rgba(0, 0, 0, 0.1);
+        font-weight: normal
+    }
+    .main-nav-hidden ul li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+    }
+    .main-nav-hidden ul li:last-child {
+        border-bottom: none
+    }
+    #cover-image img {
+        width: 160%;
+        margin-left: -30%
+    }
+    #cover-image {
+        padding-bottom: 80%
+    }
+    #cover-image img.wide-cover-image {
+        width: 160%
+    }
+}
+
+#content {
+    margin-top: 10px
+}
+
+.section-title-border-bottom, .event-section-title-border-bottom, .wedding-event-section-title-border-bottom, .wedding-party-section-title-border-bottom, .location-section-title-border-bottom, .registry-section-title-border-bottom, .album-section-title-border-bottom .photo-section-title-border-bottom {
+    margin: 0 auto 15px auto
+}
+
+.section-image-container, .wedding-event-section-image-container, .wedding-party-section-image-container, .location-section-image-container, .registry-section-image-container, .album-section-image-container, .photo-section-image-container {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.item-title, .event-title, .wedding-event-title, .location-title {
+    margin-bottom: 15px
+}
+
+.item-image-container, .wedding-event-image-container {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.event-image-container, .location-image-container {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.item-image, .event-image, .wedding-event-image, .location-image {
+    border: 0px;
+    max-height: 800px
+}
+
+.section-separator, .event-section-separator, .wedding-event-section-separator, .wedding-party-section-separator, .location-section-separator, .registry-section-separator, .album-section-separator, .photo-section-separator {
+    margin: 20px auto 20px auto
+}
+
+.item-separator, .event-separator, .wedding-event-separator, .location-separator {
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+.wedding-party-title {
+    text-align: left
+}
+
+.section-title-border-top, .event-section-title-border-top, .wedding-event-section-title-border-top, .wedding-party-section-title-border-top, .location-section-title-border-top, .registry-section-title-border-top, .album-section-title-border-top, .photo-section-title-border-top {
+    margin: 10px auto 10px auto
+}
+
+.section-title-border-bottom, .event-section-title-border-bottom, .wedding-event-section-title-border-bottom, .wedding-party-section-title-border-bottom, .location-section-title-border-bottom, .registry-section-title-border-bottom, .album-section-title-border-bottom .photo-section-title-border-bottom {
+    margin: 10px auto 15px auto
+}
+
+.section-description, .item-description, .wedding-event-description, .wedding-party-description, .location-description, .registry-note, .event-section-description, .wedding-event-section-description, .wedding-party-section-description, .location-section-description, .registry-section-description, .album-section-description, .photo-section-description {
+    text-align: left
+}
+
+.theme-image-container-bottom {
+    position: absolute;
+    bottom: 0
+}
+
+.theme-image-container-bottom {
+    position: absolute;
+    bottom: 0
+}
+
+.location-address, .location-venue, .location-attire, .location-date {
+    margin-bottom: 15px
+}
+
+.item-button-container, .event-button-container, .wedding-event-button-container, .location-button-container {
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+.wedding-party-section-items {
+    margin-top: 20px
+}
+
+.content {
+    margin-top: 20px
+}
+
+.footer {
+    padding-top: 50px
+}
+
+button {
+    border-radius: 2px;
+    font-size: 18px;
+    line-height: 1.44;
+    letter-spacing: 1px;
+    transition: all .25s
+}
+
+button:not(.main-nav) {
+    min-width: 146px;
+    min-height: 48px
+}
+
+button.mfp-arrow {
+    border: 0px !important
+}
+
+.item-image, .section-image, .event-section-image, .wedding-event-section-image, .wedding-party-section-image, .location-section-image, .registry-section-image, .album-section-image, .photo-section-image {
+    border: 0px !important;
+    background: transparent
+}
+
+.main-nav-container-container:not(.nav-open) {
+    height: 84px
+}
+
+body, a, a:hover, .footer-text {
+    font-size: 16px
+}
+
+@media only screen and (min-width: 1201px) {
+    h1, #wedding-title {
+        font-size: 3.5rem;
+        line-height: 1.4 !important
+    }
+    .section-title, div[class*='-section-title'] {
+        font-size: 2.5rem
+    }
+    .item-title {
+        font-size: 1.375rem !important
+    }
+    .event-address, .event-venue, .event-attire, .event-date, div[class*='-description'], div[class*='-description'] p, div[class*='-note'], div[class*='-address'], div[class*='-venue'], div[class*='-attire'], div[class*='-date'] {
+        font-size: 1rem
+    }
+    .wedding-party-title {
+        font-size: 1.25rem
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    h1, #wedding-title {
+        font-size: 3rem !important;
+        line-height: 1.4 !important
+    }
+    .section-title, div[class*='-section-title'] {
+        font-size: 2.5rem
+    }
+    .item-title {
+        font-size: 1.375em !important
+    }
+    .event-address, .event-venue, .event-attire, .event-date, div[class*='-description'], div[class*='-description'] p, div[class*='-note'], div[class*='-address'], div[class*='-venue'], div[class*='-attire'], div[class*='-date'] {
+        font-size: 1rem
+    }
+    .wedding-party-title {
+        font-size: 1.25rem
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    h1, #wedding-title {
+        font-size: 1.75em !important;
+        line-height: 1.4 !important
+    }
+    .section-title, div[class*='-section-title'] {
+        font-size: 1.75em
+    }
+    .item-title {
+        font-size: 1.375em !important
+    }
+    .event-address, .event-venue, .event-attire, .event-date, div[class*='-description'], div[class*='-description'] p, div[class*='-note'], div[class*='-address'], div[class*='-venue'], div[class*='-attire'], div[class*='-date'] {
+        font-size: 1rem
+    }
+    .wedding-party-title {
+        font-size: 1.125rem
+    }
+}
+
+#title-container #wedding-title, #title-container #wedding-date-location, #title-container #wedding-countdown {
+    color: #fff
+}
+
+body, a, a:hover, .footer-text {
+    font-family: "Georgia";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    color: #fff;
+    line-height: 1.8
+}
+
+button {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: normal;
+    color: #5e5462;
+    border-color: #5e5462;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f9f9f9
+}
+
+button:hover {
+    background-color: #f0ddaa
+}
+
+#wedding-title {
+    font-family: "Meddon";
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: normal;
+    color: #5e5462
+}
+
+#wedding-date-location {
+    font-family: "Georgia";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    color: #666;
+    letter-spacing: .4px
+}
+
+.theme-image-bottom {
+    background-position: bottom center;
+    background-image: url(https://static.xoedge.com/xo-guest-services/assets/guest/themes/garden_lights-plum/theme_image_bottom-62390a0a576c2aed35867516563efc77.png)
+}
+
+#main-nav, #main-nav li a {
+    font-size: 16px
+}
+
+#main-nav li a {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: bold;
+    color: #fff
+}
+
+#main-nav li a:hover, #main-nav li a.selected {
+    color: #f0ddaa
+}
+
+#main-container-background {
+    background-image: url(https://static.xoedge.com/xo-guest-services/assets/guest/themes/garden_lights-plum/background_image-9f8a59040532b90a1a864336bf0b8e37.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover
+}
+
+#main-nav-container.fixed {
+    background-color: rgba(93, 84, 93, 0.98)
+}
+
+#main-container-background, #main-nav>ul>li>ul {
+    background-color: #5d545d
+}
+
+.section-title, .event-section-title, .wedding-event-section-title, .wedding-party-section-title, .location-section-title, .album-section-title, .photo-section-title, .registry-section-title {
+    font-family: "Stint Ultra Expanded";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: normal;
+    color: #fff
+}
+
+.section-title-border-top, .event-section-title-border-top, .wedding-event-section-title-border-top, .wedding-party-section-title-border-top, .location-section-title-border-top, .album-section-title-border-top, .photo-section-title-border-top, .registry-section-title-border-top {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #fff
+}
+
+.section-title-border-bottom, .event-section-title-border-bottom, .wedding-event-section-title-border-bottom, .wedding-party-section-title-border-bottom, .location-section-title-border-bottom, .album-section-title-border-bottom, .photo-section-title-border-bottom, .registry-section-title-border-bottom {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #fff
+}
+
+.item-title, .event-title, .wedding-event-title, .location-title {
+    font-family: "Stint Ultra Expanded";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: normal;
+    color: #fff
+}
+
+.item-separator, .event-separator, .wedding-event-separator, .wedding-party-separator, .location-separator, .registry-separator {
+    background-position: center;
+    background-image: url(https://static.xoedge.com/xo-guest-services/assets/guest/themes/garden_lights-plum/item_separator-ca0eac4018096ff0e4393da614c3b6ee.png);
+    height: 40px;
+    background-repeat: no-repeat
+}
+
+@media (max-width: 767px) {
+    #wedding-date-location {
+        font-size: 12px !important
+    }
+}

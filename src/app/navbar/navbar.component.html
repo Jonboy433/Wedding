@@ -1,0 +1,39 @@
+<div class="main-nav-container-container">
+    <div class="has_content" id="main-nav-container">
+      <div class="hidden" data-months-to-wedding="8" data-url="/us/john-greco-and-sasha-yukhno-oct-2018" id="wedding-data"></div>
+      <div class="main-nav-container-inner">
+        <div class="clearfix">
+          <button class="main-nav">Menu</button>
+        </div>
+        <nav class="main-nav-hidden" id="main-nav">
+            <ul>
+                <li (click)="menuItemClicked()">
+                  <a routerLink="/" routerLinkActive="active">Our Wedding</a>
+                  <ul>
+                    <li (click)="menuItemClicked()">
+                      <a routerLink="/" fragment="the-wedding" routerLinkActive="active">The Wedding</a>
+                    </li>
+                    <li (click)="menuItemClicked()">
+                      <a routerLink="/" fragment="wedding-party" routerLinkActive="active">Wedding Party</a>
+                    </li>
+                  </ul>
+                </li>
+                <li (click)="menuItemClicked()">
+                  <a routerLink="/details" routerLinkActive="active">Details</a>
+                  <ul>
+                    <li (click)="menuItemClicked()">
+                      <a routerLink="/details" fragment='accommodations' routerLinkActive="active">Accommodations</a>
+                    </li>
+                    <li (click)="menuItemClicked()">
+                      <a routerLink="/details" fragment='things-to-do' routerLinkActive="active">Things to Do</a>
+                    </li>
+                    <li (click)="menuItemClicked()">
+                        <a routerLink="/details" fragment='eat-and-drink' routerLinkActive="active">Eat and Drink</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
