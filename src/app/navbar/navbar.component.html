@@ -7,7 +7,7 @@
         </div>
         <nav class="main-nav-hidden" id="main-nav">
             <ul>
-                <li (click)="menuItemClicked()">
+                <li *ngIf="!isTablet()" (click)="menuItemClicked()">
                   <a routerLink="/" routerLinkActive="active">Our Wedding</a>
                   <ul>
                     <li (click)="menuItemClicked()">
@@ -18,8 +18,37 @@
                     </li>
                   </ul>
                 </li>
-                <li (click)="menuItemClicked()">
+                <!-- If using tablet dont link to Wedding page  -->
+                <li *ngIf="isTablet()" (click)="menuItemClickedTablet()">
+                  <a>Our Wedding</a>
+                  <ul>
+                    <li (click)="menuItemClicked()">
+                      <a routerLink="/" fragment="the-wedding" routerLinkActive="active">The Wedding</a>
+                    </li>
+                    <li (click)="menuItemClicked()">
+                      <a routerLink="/" fragment="wedding-party" routerLinkActive="active">Wedding Party</a>
+                    </li>
+                  </ul>
+                </li>
+
+
+                <li *ngIf="!isTablet()" (click)="menuItemClicked()">
                   <a routerLink="/details" routerLinkActive="active">Details</a>
+                  <ul>
+                    <li (click)="menuItemClicked()">
+                      <a routerLink="/details" fragment='accommodations' routerLinkActive="active">Accommodations</a>
+                    </li>
+                    <li (click)="menuItemClicked()">
+                      <a routerLink="/details" fragment='things-to-do' routerLinkActive="active">Things to Do</a>
+                    </li>
+                    <li (click)="menuItemClicked()">
+                        <a routerLink="/details" fragment='eat-and-drink' routerLinkActive="active">Eat and Drink</a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- If using tablet dont link to Details page onClick -->
+                <li *ngIf="isTablet()" (click)="menuItemClickedTablet()">
+                  <a>Details</a>
                   <ul>
                     <li (click)="menuItemClicked()">
                       <a routerLink="/details" fragment='accommodations' routerLinkActive="active">Accommodations</a>

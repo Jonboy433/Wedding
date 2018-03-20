@@ -1,4 +1,5 @@
 @import url("//fonts.googleapis.com/css?family=Meddon:400|Stint+Ultra+Expanded:400");
+
 #title-container {
     background: transparent;
     padding-top: 10px;
@@ -315,7 +316,7 @@ body, a, a:hover, .footer-text {
         line-height: 1.4 !important
     }
     .section-title, div[class*='-section-title'] {
-        font-size: 2.5rem
+        font-size: 2.3rem
     }
     .item-title {
         font-size: 1.375em !important
@@ -334,7 +335,8 @@ body, a, a:hover, .footer-text {
         line-height: 1.4 !important
     }
     .section-title, div[class*='-section-title'] {
-        font-size: 1.75em
+        /* font-size: 1.75em */
+        font-size: 1.8rem !important;
     }
     .item-title {
         font-size: 1.375em !important
@@ -429,7 +431,7 @@ button:hover {
 
 .section-title, .event-section-title, .wedding-event-section-title, .wedding-party-section-title, .location-section-title, .album-section-title, .photo-section-title, .registry-section-title {
     font-family: "Stint Ultra Expanded";
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: normal;
     color: #fff
