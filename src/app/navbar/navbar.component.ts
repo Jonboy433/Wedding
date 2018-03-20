@@ -38,45 +38,48 @@ export class NavbarComponent implements OnInit {
       }
     });
 
-    // Add function to menu item that removes the hovered class on click
-    $(document).ready(function(){
-      var topMenuItem = $('#main-nav > ul > li');
 
-      topMenuItem.on('touchstart', function(){
-        var btnClicked = $(this);
+    if (this.isTablet()) {
+      // Add function to menu item that removes the hovered class on click
+      $(document).ready(function () {
+        var topMenuItem = $('#main-nav > ul > li');
 
-        // Check sibling dropdown visibility. If it's open when we click on this one we should close it prior to opening this dropdown
-        if (btnClicked.attr("id") == "wedding") {
-          //Hide details
-          $('#details').children('ul').css("visibility","hidden");
-          $('#details').children('ul').css("opacity","0");
-        };
+        topMenuItem.on('touchstart', function () {
+          var btnClicked = $(this);
 
-        if (btnClicked.attr("id") == "details") {
-          //Hide wedding
-          $('#wedding').children('ul').css("visibility","hidden");
-          $('#wedding').children('ul').css("opacity","0");
-        };
+          // Check sibling dropdown visibility. If it's open when we click on this one we should close it prior to opening this dropdown
+          if (btnClicked.attr("id") == "wedding") {
+            //Hide details
+            $('#details').children('ul').css("visibility", "hidden");
+            $('#details').children('ul').css("opacity", "0");
+          };
 
-        btnClicked.children('ul').css('visibility') == 'visible' ? btnClicked.children('ul').css('visibility','hidden') : btnClicked.children('ul').css('visibility','visible');
-        btnClicked.children('ul').css('opacity') == '0' ? btnClicked.children('ul').css('opacity','1') : btnClicked.children('ul').css('opacity','0');
+          if (btnClicked.attr("id") == "details") {
+            //Hide wedding
+            $('#wedding').children('ul').css("visibility", "hidden");
+            $('#wedding').children('ul').css("opacity", "0");
+          };
 
-      }).children().not('a').on('touchstart', function(e){
-        e.stopPropagation();
-      })
-    });
+          btnClicked.children('ul').css('visibility') == 'visible' ? btnClicked.children('ul').css('visibility', 'hidden') : btnClicked.children('ul').css('visibility', 'visible');
+          btnClicked.children('ul').css('opacity') == '0' ? btnClicked.children('ul').css('opacity', '1') : btnClicked.children('ul').css('opacity', '0');
 
-    // Add touchend event to menu item
-    $(document).ready(function () {
-      var menuItem = $('#main-nav ul li ul li');
-      menuItem.on('touchend', function () {
-        var btnClicked = $(this);
-
-        btnClicked.parent().css("visibility","hidden");
-        btnClicked.parent().css("opacity","0");
- 
+        }).children().not('a').on('touchstart', function (e) {
+          e.stopPropagation();
+        })
       });
-    });
+
+      // Add touchend event to menu item
+      $(document).ready(function () {
+        var menuItem = $('#main-nav ul li ul li');
+        menuItem.on('touchend', function () {
+          var btnClicked = $(this);
+
+          btnClicked.parent().css("visibility", "hidden");
+          btnClicked.parent().css("opacity", "0");
+
+        });
+      });
+    }
 
   }
 
@@ -94,12 +97,7 @@ export class NavbarComponent implements OnInit {
     // TODO: This should only happen on iPhones
     $(onMainNavButtonPressed());
   }
-
-  menuItemClickedTablet() {
-    //
-
-  }
-
+  
   scrollToAnchor(id: string) {
     function scrollToAnchor(id) {
       var tag = $("#" + id + "");
