@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import onMainNavButtonPressed from '../../assets/layout.js';
 
 declare var $: any;
 declare var onMainNavButtonPressed: any;
