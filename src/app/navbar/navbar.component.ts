@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {
     var ua = navigator.userAgent;
-    if (ua.includes('iPad')) {
+    if (ua.includes('iPad') || ua.includes('GT-P7100') || ua.includes('SM-T807V')) {
       isTablet = true;
     }
 
