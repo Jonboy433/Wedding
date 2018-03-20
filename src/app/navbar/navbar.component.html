@@ -19,7 +19,7 @@
                   </ul>
                 </li>
                 <!-- If using tablet dont link to Wedding page  -->
-                <li *ngIf="isTablet()" (click)="menuItemClickedTablet()">
+                <li *ngIf="isTablet()" (click)="menuItemClickedTablet()" id="wedding">
                   <a>Our Wedding</a>
                   <ul>
                     <li (click)="menuItemClicked()">
@@ -47,7 +47,7 @@
                   </ul>
                 </li>
                 <!-- If using tablet dont link to Details page onClick -->
-                <li *ngIf="isTablet()" (click)="menuItemClickedTablet()">
+                <li *ngIf="isTablet()" (click)="menuItemClickedTablet()" id="details">
                   <a>Details</a>
                   <ul>
                     <li (click)="menuItemClicked()">

@@ -41,8 +41,22 @@ export class NavbarComponent implements OnInit {
     // Add function to menu item that removes the hovered class on click
     $(document).ready(function(){
       var topMenuItem = $('#main-nav > ul > li');
+
       topMenuItem.on('touchstart', function(){
         var btnClicked = $(this);
+
+        // Check sibling dropdown visibility. If it's open when we click on this one we should close it prior to opening this dropdown
+        if (btnClicked.attr("id") == "wedding") {
+          //Hide details
+          $('#details').children('ul').css("visibility","hidden");
+          $('#details').children('ul').css("opacity","0");
+        };
+
+        if (btnClicked.attr("id") == "details") {
+          //Hide wedding
+          $('#wedding').children('ul').css("visibility","hidden");
+          $('#wedding').children('ul').css("opacity","0");
+        };
 
         btnClicked.children('ul').css('visibility') == 'visible' ? btnClicked.children('ul').css('visibility','hidden') : btnClicked.children('ul').css('visibility','visible');
         btnClicked.children('ul').css('opacity') == '0' ? btnClicked.children('ul').css('opacity','1') : btnClicked.children('ul').css('opacity','0');
