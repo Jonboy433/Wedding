@@ -4002,25 +4002,25 @@ button.main-nav {
     }
 }
 
-.section, .event-section, .wedding-event-section, .wedding-party-section, .location-section, .registry-section, .album-section, .photo-section {
+.section, .event-section, .wedding-event-section, .wedding-schedule-section, .wedding-party-section, .location-section, .registry-section, .album-section, .photo-section {
     position: relative
 }
 
-.section-title, .event-section-title, .wedding-event-section-title, .wedding-party-section-title, .location-section-title, .registry-section-title, .photo-section-title {
+.section-title, .event-section-title, .wedding-event-section-title, .wedding-schedule-section-title, .wedding-party-section-title, .location-section-title, .registry-section-title, .photo-section-title {
     max-width: 840px;
     margin: 0 auto;
     text-align: center;
     line-height: 1.5
 }
 
-.section-title-border-top, .event-section-title-border-top, .wedding-event-section-title-border-top, .wedding-party-section-title-border-top, .location-section-title-border-top, .registry-section-title-border-top, .album-section-title-border-top, .photo-section-title-border-top {
+.section-title-border-top, .event-section-title-border-top, .wedding-event-section-title-border-top, .wedding-schedule-section-title-border-top, .wedding-party-section-title-border-top, .location-section-title-border-top, .registry-section-title-border-top, .album-section-title-border-top, .photo-section-title-border-top {
     background-position: center;
     width: 100%;
     max-width: 840px;
     margin: 0 auto
 }
 
-.section-title-border-bottom, .event-section-title-border-bottom, .wedding-event-section-title-border-bottom, .wedding-party-section-title-border-bottom, .location-section-title-border-bottom, .registry-section-title-border-bottom, .album-section-title-border-bottom, .photo-section-title-border-bottom {
+.section-title-border-bottom, .event-section-title-border-bottom, .wedding-event-section-title-border-bottom, .wedding-schedule-section-title-border-bottom, .wedding-party-section-title-border-bottom, .location-section-title-border-bottom, .registry-section-title-border-bottom, .album-section-title-border-bottom, .photo-section-title-border-bottom {
     background-position: center;
     margin-bottom: 24px;
     width: 100%;
@@ -4028,56 +4028,56 @@ button.main-nav {
     margin: 0 auto 24px auto
 }
 
-.section-image-container, .wedding-event-section-image-container, .wedding-party-section-image-container, .location-section-image-container, .registry-section-image-container, .album-section-image-container, .photo-section-image-container {
+.section-image-container, .wedding-event-section-image-container, .wedding-schedule-section-image-container, .wedding-party-section-image-container, .location-section-image-container, .registry-section-image-container, .album-section-image-container, .photo-section-image-container {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px
 }
 
-.section-image, .event-section-image, .wedding-event-section-image, .wedding-party-section-image, .location-section-image, .registry-section-image, .album-section-image, .photo-section-image {
+.section-image, .event-section-image, .wedding-event-section-image, .wedding-schedule-section-image, .wedding-party-section-image, .location-section-image, .registry-section-image, .album-section-image, .photo-section-image {
     border: 16px solid white;
     max-height: 640px;
     max-width: 100%
 }
 
-.section-description, .item-description, .event-description, .wedding-event-description, .wedding-party-description, .location-description, .registry-note, .event-section-description, .wedding-event-section-description, .wedding-party-section-description, .location-section-description, .registry-section-description, .album-section-description, .photo-section-description {
+.section-description, .item-description, .event-description, .wedding-event-description, .wedding-schedule-description, .wedding-party-description, .location-description, .registry-note, .event-section-description, .wedding-event-section-description, .wedding-party-section-description, .location-section-description, .registry-section-description, .album-section-description, .photo-section-description {
     text-align: left;
     max-width: 840px;
     margin: 0 auto;
     font-size: 1.4em
 }
 
-.section-description p, .item-description p, .event-description p, .wedding-event-description p, .wedding-party-description p, .location-description p, .registry-note p, .event-section-description p, .wedding-event-section-description p, .wedding-party-section-description p, .location-section-description p, .registry-section-description p, .album-section-description p, .photo-section-description p, .section-description a, .item-description a, .event-description a, .wedding-event-description a, .wedding-party-description a, .location-description a, .registry-note a, .event-section-description a, .wedding-event-section-description a, .wedding-party-section-description a, .location-section-description a, .registry-section-description a, .album-section-description a, .photo-section-description a, .section-description a:hover, .item-description a:hover, .event-description a:hover, .wedding-event-description a:hover, .wedding-party-description a:hover, .location-description a:hover, .registry-note a:hover, .event-section-description a:hover, .wedding-event-section-description a:hover, .wedding-party-section-description a:hover, .location-section-description a:hover, .registry-section-description a:hover, .album-section-description a:hover, .photo-section-description a:hover {
+.section-description p, .item-description p, .event-description p, .wedding-event-description p, .wedding-schedule-description p, .wedding-party-description p, .location-description p, .registry-note p, .event-section-description p, .wedding-event-section-description p, .wedding-party-section-description p, .location-section-description p, .registry-section-description p, .album-section-description p, .photo-section-description p, .section-description a, .item-description a, .event-description a, .wedding-event-description a, .wedding-party-description a, .location-description a, .registry-note a, .event-section-description a, .wedding-event-section-description a, .wedding-party-section-description a, .location-section-description a, .registry-section-description a, .album-section-description a, .photo-section-description a, .section-description a:hover, .item-description a:hover, .event-description a:hover, .wedding-event-description a:hover, .wedding-party-description a:hover, .location-description a:hover, .registry-note a:hover, .event-section-description a:hover, .wedding-event-section-description a:hover, .wedding-party-section-description a:hover, .location-section-description a:hover, .registry-section-description a:hover, .album-section-description a:hover, .photo-section-description a:hover {
     font-size: 1em
 }
 
-.section-description ol, .item-description ol, .event-description ol, .wedding-event-description ol, .wedding-party-description ol, .location-description ol, .registry-note ol, .event-section-description ol, .wedding-event-section-description ol, .wedding-party-section-description ol, .location-section-description ol, .registry-section-description ol, .album-section-description ol, .photo-section-description ol {
+.section-description ol, .item-description ol, .event-description ol, .wedding-event-description ol, .wedding-schedule-description ol, .wedding-party-description ol, .location-description ol, .registry-note ol, .event-section-description ol, .wedding-event-section-description ol, .wedding-party-section-description ol, .location-section-description ol, .registry-section-description ol, .album-section-description ol, .photo-section-description ol {
     margin: 0;
     padding: 0
 }
 
-.section-description ol li, .item-description ol li, .event-description ol li, .wedding-event-description ol li, .wedding-party-description ol li, .location-description ol li, .registry-note ol li, .event-section-description ol li, .wedding-event-section-description ol li, .wedding-party-section-description ol li, .location-section-description ol li, .registry-section-description ol li, .album-section-description ol li, .photo-section-description ol li {
+.section-description ol li, .item-description ol li, .event-description ol li, .wedding-event-description ol li, .wedding-schedule-description ol li,  .wedding-party-description ol li, .location-description ol li, .registry-note ol li, .event-section-description ol li, .wedding-event-section-description ol li, .wedding-party-section-description ol li, .location-section-description ol li, .registry-section-description ol li, .album-section-description ol li, .photo-section-description ol li {
     text-align: left;
     list-style: decimal
 }
 
-.section-description ul li, .item-description ul li, .event-description ul li, .wedding-event-description ul li, .wedding-party-description ul li, .location-description ul li, .registry-note ul li, .event-section-description ul li, .wedding-event-section-description ul li, .wedding-party-section-description ul li, .location-section-description ul li, .registry-section-description ul li, .album-section-description ul li, .photo-section-description ul li {
+.section-description ul li, .item-description ul li, .event-description ul li, .wedding-event-description ul li, .wedding-schedule-description ul li, .wedding-party-description ul li, .location-description ul li, .registry-note ul li, .event-section-description ul li, .wedding-event-section-description ul li, .wedding-party-section-description ul li, .location-section-description ul li, .registry-section-description ul li, .album-section-description ul li, .photo-section-description ul li {
     text-align: left;
     list-style: disc
 }
 
-.section-items, .event-section-items, .wedding-event-section-items, .wedding-party-section-items, .location-section-items, .album-section-items, .photo-section-items {
+.section-items, .event-section-items, .wedding-event-section-items, .wedding-schedule-section-items, .wedding-party-section-items, .location-section-items, .album-section-items, .photo-section-items {
     max-width: 840px;
     margin: auto
 }
 
-.section-separator, .event-section-separator, .wedding-event-section-separator, .wedding-party-section-separator, .location-section-separator, .registry-section-separator, .album-section-separator, .photo-section-separator {
+.section-separator, .event-section-separator, .wedding-event-section-separator, .wedding-schedule-section-separator, .wedding-party-section-separator, .location-section-separator, .registry-section-separator, .album-section-separator, .photo-section-separator {
     max-width: 840px;
     margin: 40px auto;
     background-size: contain
 }
 
-.section-separator:last-of-type, .event-section-separator:last-of-type, .wedding-event-section-separator:last-of-type, .wedding-party-section-separator:last-of-type, .location-section-separator:last-of-type, .registry-section-separator:last-of-type, .album-section-separator:last-of-type, .photo-section-separator:last-of-type {
+.section-separator:last-of-type, .event-section-separator:last-of-type, .wedding-event-section-separator:last-of-type, .wedding-schedule-section-separator:last-of-type, .wedding-party-section-separator:last-of-type, .location-section-separator:last-of-type, .registry-section-separator:last-of-type, .album-section-separator:last-of-type, .photo-section-separator:last-of-type {
     visibility: hidden !important;
     display: none !important
 }
@@ -4090,16 +4090,16 @@ button.main-nav {
 }
 
 @media (max-width: 767px) {
-    .section-title-border-bottom, .event-section-title-border-bottom, .wedding-event-section-title-border-bottom, .wedding-party-section-title-border-bottom, .location-section-title-border-bottom, .registry-section-title-border-bottom, .album-section-title-border-bottom, .photo-section-title-border-bottom {
+    .section-title-border-bottom, .event-section-title-border-bottom, .wedding-event-section-title-border-bottom, .wedding-schedule-section-title-border-bottom, .wedding-party-section-title-border-bottom, .location-section-title-border-bottom, .registry-section-title-border-bottom, .album-section-title-border-bottom, .photo-section-title-border-bottom {
         margin-bottom: 10px
     }
-    .section-image-container, .wedding-event-section-image-container, .wedding-party-section-image-container, .location-section-image-container, .registry-section-image-container, .album-section-image-container, .photo-section-image-container {
+    .section-image-container, .wedding-event-section-image-container, .wedding-schedule-section-image-container, .wedding-party-section-image-container, .location-section-image-container, .registry-section-image-container, .album-section-image-container, .photo-section-image-container {
         margin-top: 10px
     }
-    .section-separator, .event-section-separator, .wedding-event-section-separator, .wedding-party-section-separator, .location-section-separator, .registry-section-separator, .album-section-separator, .photo-section-separator {
+    .section-separator, .event-section-separator, .wedding-event-section-separator, .wedding-schedule-section-separator, .wedding-party-section-separator, .location-section-separator, .registry-section-separator, .album-section-separator, .photo-section-separator {
         margin: 30px auto
     }
-    .section-image, .event-section-image, .wedding-event-section-image, .wedding-party-section-image, .location-section-image, .registry-section-image, .album-section-image, .photo-section-image {
+    .section-image, .event-section-image, .wedding-event-section-image, .wedding-schedule-section-image, .wedding-party-section-image, .location-section-image, .registry-section-image, .album-section-image, .photo-section-image {
         border-width: 6px
     }
 }
@@ -4124,7 +4124,7 @@ button.main-nav {
     max-width: 100%
 }
 
-.item-description p:not(:first-of-type), .event-description p:not(:first-of-type), .wedding-event-description p:not(:first-of-type), .wedding-party-description p:not(:first-of-type), .location-description p:not(:first-of-type), .registry-note p:not(:first-of-type) {
+.item-description p:not(:first-of-type), .event-description p:not(:first-of-type), .wedding-event-description p:not(:first-of-type), .wedding-schedule-description p:not(:first-of-type), .wedding-party-description p:not(:first-of-type), .location-description p:not(:first-of-type), .registry-note p:not(:first-of-type) {
     margin-top: 15px
 }
 
@@ -4170,7 +4170,7 @@ button.main-nav {
     display: inline-block
 }
 
-.wedding-event-address, .wedding-event-venue, .wedding-event-attire, .wedding-event-date {
+.wedding-event-address, .wedding-event-venue, .wedding-event-attire, .wedding-event-date, .wedding-schedule-address, .wedding-schedule-venue, .wedding-schedule-date {
     text-align: center;
     font-size: 1.5em;
     line-height: 2

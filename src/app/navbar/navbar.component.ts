@@ -38,7 +38,6 @@ export class NavbarComponent implements OnInit {
       }
     });
 
-
     if (this.isTablet()) {
       // Add function to menu item that removes the hovered class on click
       $(document).ready(function () {
