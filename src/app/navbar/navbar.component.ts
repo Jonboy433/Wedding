@@ -28,6 +28,11 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     console.log('Inside NavBar OnInit');
+    
+    let screenSize;
+    //Get Screen size
+    screenSize = $(window).width();
+    console.log('Screen size: ' + screenSize);
 
     // Fix the navbar to the top position when they scroll down
     $(window).scroll(function () {
@@ -41,7 +46,7 @@ export class NavbarComponent implements OnInit {
     if (this.isTablet()) {
       // Add function to menu item that removes the hovered class on click
       $(document).ready(function () {
-        var topMenuItem = $('#main-nav > ul > li');
+        let topMenuItem = $('#main-nav > ul > li');
 
         topMenuItem.on('touchstart', function () {
           var btnClicked = $(this);
@@ -80,33 +85,33 @@ export class NavbarComponent implements OnInit {
       });
     }
 
-  }
+    $(document).ready(function () {
+      let topMenuItem = $('#main-nav ul li');
+      topMenuItem.each(function (e) {
+        $(this).on('click', function (e) {
+          // Prevent event bubbling
+          e.stopPropagation();
+          console.log('pathname: ' + window.location.pathname);
+          console.log('hash: ' + window.location.hash);
+          console.log($(this).children('a')[0]);
+          // WORKS
+          //$(window.location.hash)[0].scrollIntoView();
+          if (window.location.hash) {
+            let tag = $(window.location.hash);
+            $('html,body').animate({ scrollTop: tag.offset().top }, 'fast');
+          }
+          else {
+            $('html,body').animate({ scrollTop: 0 }, 'fast');
 
-  menuItemClicked() {
-    let id = this.route.snapshot.fragment;
-
-    if (id != undefined) {
-      this.scrollToAnchor(id);
-    } else {
-      // no fragment - they clicked main item so scroll to top of page
-      $('html,body').animate({ scrollTop: top }, 'fast');
-    }
-
-    // layout.js - close menu when menu item is clicked on small devices
-    // TODO: This should only happen on iPhones
-    $(onMainNavButtonPressed());
-  }
-  
-  scrollToAnchor(id: string) {
-    function scrollToAnchor(id) {
-      var tag = $("#" + id + "");
-      $('html,body').animate({ scrollTop: tag.offset().top }, 'fast');
-    }
-
-    // Call above jquery
-    scrollToAnchor(id);
-
-  }
+            // If using a mobile phone close menu after selection
+            if (screenSize < 450) {
+              $(onMainNavButtonPressed());
+            }
+          }
+        })
+      })
+    });
+  };
 
   isTablet() {
     return isTablet;

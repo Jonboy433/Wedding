@@ -7,16 +7,16 @@
         </div>
         <nav class="main-nav-hidden" id="main-nav">
             <ul>
-                <li *ngIf="!isTablet()" (click)="menuItemClicked()">
+                <li *ngIf="!isTablet()">
                   <a routerLink="/" routerLinkActive="active">Our Wedding</a>
                   <ul>
-                    <li (click)="menuItemClicked()">
+                    <li>
                       <a routerLink="/" fragment="the-wedding" routerLinkActive="active">The Wedding</a>
                     </li>
-                    <li (click)="menuItemClicked()">
+                    <li>
                         <a routerLink="/" fragment="the-schedule" routerLinkActive="active">Schedule</a>
                       </li>
-                    <li (click)="menuItemClicked()">
+                    <li>
                       <a routerLink="/" fragment="wedding-party" routerLinkActive="active">Wedding Party</a>
                     </li>
                   </ul>
@@ -25,29 +25,29 @@
                 <li *ngIf="isTablet()" id="wedding">
                   <a>Our Wedding</a>
                   <ul>
-                    <li (click)="menuItemClicked()">
+                    <li>
                       <a routerLink="/" fragment="the-wedding" routerLinkActive="active">The Wedding</a>
                     </li>
-                    <li (click)="menuItemClicked()">
+                    <li>
                         <a routerLink="/" fragment="the-schedule" routerLinkActive="active">Schedule</a>
                       </li>
-                    <li (click)="menuItemClicked()">
+                    <li>
                       <a routerLink="/" fragment="wedding-party" routerLinkActive="active">Wedding Party</a>
                     </li>
                   </ul>
                 </li>
 
 
-                <li *ngIf="!isTablet()" (click)="menuItemClicked()">
+                <li *ngIf="!isTablet()">
                   <a routerLink="/details" routerLinkActive="active">Details</a>
                   <ul>
-                    <li (click)="menuItemClicked()">
+                    <li>
                       <a routerLink="/details" fragment='accommodations' routerLinkActive="active">Accommodations</a>
                     </li>
-                    <li (click)="menuItemClicked()">
+                    <li>
                       <a routerLink="/details" fragment='things-to-do' routerLinkActive="active">Things to Do</a>
                     </li>
-                    <li (click)="menuItemClicked()">
+                    <li>
                         <a routerLink="/details" fragment='eat-and-drink' routerLinkActive="active">Eat and Drink</a>
                     </li>
                   </ul>
@@ -56,13 +56,13 @@
                 <li *ngIf="isTablet()" id="details">
                   <a>Details</a>
                   <ul>
-                    <li (click)="menuItemClicked()">
+                    <li>
                       <a routerLink="/details" fragment='accommodations' routerLinkActive="active">Accommodations</a>
                     </li>
-                    <li (click)="menuItemClicked()">
+                    <li>
                       <a routerLink="/details" fragment='things-to-do' routerLinkActive="active">Things to Do</a>
                     </li>
-                    <li (click)="menuItemClicked()">
+                    <li>
                         <a routerLink="/details" fragment='eat-and-drink' routerLinkActive="active">Eat and Drink</a>
                     </li>
                   </ul>
