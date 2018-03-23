@@ -17,7 +17,8 @@ function createCountdown() {
         handleScroll = function () { 
             var e = document.getElementById("main-nav-container"), 
                 t = document.getElementById("header") || document.getElementById("content"), 
-                i = e.clientHeight,
+                //i = e.clientHeight,
+                i = 150,
                 n = t.getBoundingClientRect(); 
             
                 n.top <= i ? e.classList.add("fixed") : e.classList.remove("fixed") 
