@@ -90,11 +90,7 @@ export class NavbarComponent implements OnInit {
         $(this).on('click', function (e) {
           // Prevent event bubbling
           e.stopPropagation();
-          console.log('pathname: ' + window.location.pathname);
-          console.log('hash: ' + window.location.hash);
-          console.log($(this).children('a')[0]);
-          // WORKS
-          //$(window.location.hash)[0].scrollIntoView();
+
           if (window.location.hash) {
             let tag = $(window.location.hash);
             $('html,body').animate({ scrollTop: tag.offset().top }, 'fast');
