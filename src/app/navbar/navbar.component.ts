@@ -32,7 +32,6 @@ export class NavbarComponent implements OnInit {
     let screenSize;
     //Get Screen size
     screenSize = $(window).width();
-    console.log('Screen size: ' + screenSize);
 
     // Fix the navbar to the top position when they scroll down
     $(window).scroll(function () {
