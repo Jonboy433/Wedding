@@ -349,6 +349,15 @@ body, a, a:hover, .footer-text {
     }
 }
 
+@media only screen and (max-width: 767px) {
+
+    .event-description, .things-to-do-description {
+        font-size: 0.9rem !important
+    }
+
+}
+
+
 #title-container #wedding-title, #title-container #wedding-date-location, #title-container #wedding-countdown {
     color: #fff
 }
