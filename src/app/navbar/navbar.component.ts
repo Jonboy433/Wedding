@@ -37,10 +37,9 @@ export class NavbarComponent implements OnInit {
       $("#main-nav").toggleClass("visible");
       $(".main-nav-container-container").toggleClass("nav-open");
       $(document.body).toggleClass("nav-open");
-      alert('test');
     }
 
-    $("button.main-nav").on("click", onMainNavButtonPressed)
+    $("button.main-nav").on("touchend", onMainNavButtonPressed);
 
     // Fix the navbar to the top position when they scroll down
     $(window).scroll(function () {
