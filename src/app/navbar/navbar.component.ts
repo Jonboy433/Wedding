@@ -117,7 +117,10 @@ export class NavbarComponent implements OnInit {
 
               // If using a mobile phone close menu after selection
               if (screenSize < 450) {
-                $(onMainNavButtonPressed());
+                //$(onMainNavButtonPressed());
+                $("#main-nav").removeClass("visible"), 
+                $(".main-nav-container-container").removeClass("nav-open"), 
+                $(document.body).removeClass("nav-open") 
               }
             }
           })
