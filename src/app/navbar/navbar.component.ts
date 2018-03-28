@@ -33,6 +33,15 @@ export class NavbarComponent implements OnInit {
     //Get Screen size
     screenSize = $(window).width();
 
+    var onMainNavButtonPressed = function () { 
+      $("#main-nav").toggleClass("visible");
+      $(".main-nav-container-container").toggleClass("nav-open");
+      $(document.body).toggleClass("nav-open");
+      alert('test');
+    }
+
+    $("button.main-nav").on("click", onMainNavButtonPressed)
+
     // Fix the navbar to the top position when they scroll down
     $(window).scroll(function () {
       if ($(this).scrollTop() > 136) {
@@ -117,10 +126,7 @@ export class NavbarComponent implements OnInit {
 
               // If using a mobile phone close menu after selection
               if (screenSize < 450) {
-                //$(onMainNavButtonPressed());
-                $("#main-nav").removeClass("visible"), 
-                $(".main-nav-container-container").removeClass("nav-open"), 
-                $(document.body).removeClass("nav-open") 
+                $(onMainNavButtonPressed());
               }
             }
           })

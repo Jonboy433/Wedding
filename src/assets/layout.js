@@ -11,7 +11,7 @@ function createCountdown() {
     var onMainNavButtonPressed = function () { 
         $("#main-nav").toggleClass("visible"), 
         $(".main-nav-container-container").toggleClass("nav-open"), 
-        $(document.body).toggleClass("nav-open") 
+        $(document.body).toggleClass("nav-open")
     }, 
         
         handleScroll = function () { 
@@ -26,7 +26,8 @@ function createCountdown() {
         
         init = function () { 
                 document.domain = window.location.hostname.match(/\.theknot.com/) ? "theknot.com" : window.location.hostname, window.location.hash && $(window.location.hash).length > 0 && $("html, body").animate({ scrollTop: $(window.location.hash).eq(0).offset().top }, 0), 
-                createCountdown(), $("button.main-nav").on("click", onMainNavButtonPressed), $(".rsvp-link").on("click", segmentIoTrackRsvp), 
+                createCountdown(), 
+                //$("button.main-nav").on("click", onMainNavButtonPressed), 
                 $(".visit-website").on("click", segmentIoWebsiteClickThrough), 
                 checkTheme(), 
                 checkEditButton(), 
