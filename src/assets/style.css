@@ -1,5 +1,9 @@
 @import url("//fonts.googleapis.com/css?family=Meddon:400|Stint+Ultra+Expanded:400");
 
+.disabled {
+    pointer-events: none;
+}
+
 #title-container {
     background: transparent;
     padding-top: 10px;
@@ -452,7 +456,7 @@ button:hover {
     border-top-color: #fff
 }
 
-.section-title-border-bottom, .event-section-title-border-bottom, .wedding-event-section-title-border-bottom, .wedding-schedule-section-title-border-bottom. .wedding-party-section-title-border-bottom, .location-section-title-border-bottom, .album-section-title-border-bottom, .photo-section-title-border-bottom, .registry-section-title-border-bottom {
+.section-title-border-bottom, .event-section-title-border-bottom, .wedding-event-section-title-border-bottom, .wedding-schedule-section-title-border-bottom, .wedding-party-section-title-border-bottom, .location-section-title-border-bottom, .album-section-title-border-bottom, .photo-section-title-border-bottom, .registry-section-title-border-bottom {
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: #fff

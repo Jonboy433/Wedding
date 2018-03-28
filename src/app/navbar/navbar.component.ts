@@ -28,7 +28,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     console.log('Inside NavBar OnInit');
-    
+
     let screenSize;
     //Get Screen size
     screenSize = $(window).width();
@@ -47,8 +47,12 @@ export class NavbarComponent implements OnInit {
       $(document).ready(function () {
         let topMenuItem = $('#main-nav > ul > li');
 
-        topMenuItem.on('touchstart', function () {
+        // 3/27 - changed from touchstart to click; seems to work fine
+        topMenuItem.on('click', function () {
           var btnClicked = $(this);
+
+          //Enable pointer events for children ul when this element is clicked
+          btnClicked.children('ul').removeClass('disabled');
 
           // Check sibling dropdown visibility. If it's open when we click on this one we should close it prior to opening this dropdown
           if (btnClicked.attr("id") == "wedding") {
@@ -74,38 +78,53 @@ export class NavbarComponent implements OnInit {
       // Add touchend event to menu item
       $(document).ready(function () {
         var menuItem = $('#main-nav ul li ul li');
-        menuItem.on('touchend', function () {
-          var btnClicked = $(this);
 
+        //Changing from touchend to click seems to work for now
+        menuItem.on('click', function () {
+          var btnClicked = $(this);
           btnClicked.parent().css("visibility", "hidden");
           btnClicked.parent().css("opacity", "0");
 
-        });
-      });
-    }
-
-    $(document).ready(function () {
-      let topMenuItem = $('#main-nav ul li');
-      topMenuItem.each(function (e) {
-        $(this).on('click', function (e) {
-          // Prevent event bubbling
-          e.stopPropagation();
-
+          //Handle scrolling
           if (window.location.hash) {
             let tag = $(window.location.hash);
             $('html,body').animate({ scrollTop: tag.offset().top }, 'fast');
           }
           else {
             $('html,body').animate({ scrollTop: 0 }, 'fast');
-
-            // If using a mobile phone close menu after selection
-            if (screenSize < 450) {
-              $(onMainNavButtonPressed());
-            }
           }
+
+          //Disable click event on parent element when item is hidden
+          btnClicked.parent().addClass('disabled');
+        });
+      });
+    }
+
+
+    if (!this.isTablet()) {
+      $(document).ready(function () {
+        let topMenuItem = $('#main-nav ul li');
+        topMenuItem.each(function (e) {
+          $(this).on('click', function (e) {
+            // Prevent event bubbling
+            e.stopPropagation();
+            if (window.location.hash) {
+              let tag = $(window.location.hash);
+              $('html,body').animate({ scrollTop: tag.offset().top }, 'fast');
+            }
+            else {
+              $('html,body').animate({ scrollTop: 0 }, 'fast');
+
+              // If using a mobile phone close menu after selection
+              if (screenSize < 450) {
+                $(onMainNavButtonPressed());
+              }
+            }
+          })
         })
-      })
-    });
+      });
+    }
+
   };
 
   isTablet() {
