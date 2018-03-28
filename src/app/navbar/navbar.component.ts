@@ -48,7 +48,7 @@ export class NavbarComponent implements OnInit {
         let topMenuItem = $('#main-nav > ul > li');
 
         // 3/27 - changed from touchstart to click; seems to work fine
-        topMenuItem.on('click', function () {
+        topMenuItem.on('touchstart', function () {
           var btnClicked = $(this);
 
           //Enable pointer events for children ul when this element is clicked
