@@ -33,7 +33,7 @@ export class NavbarComponent implements OnInit {
     //Get Screen size
     screenSize = $(window).width();
 
-    var onMainNavButtonPressed = function () { 
+    var onMainNavButtonPressed = function () {
       $("#main-nav").toggleClass("visible");
       $(".main-nav-container-container").toggleClass("nav-open");
       $(document.body).toggleClass("nav-open");
@@ -122,11 +122,11 @@ export class NavbarComponent implements OnInit {
             }
             else {
               $('html,body').animate({ scrollTop: 0 }, 'fast');
+            }
 
-              // If using a mobile phone close menu after selection
-              if (screenSize < 450) {
-                $(onMainNavButtonPressed());
-              }
+            // If using a mobile phone close menu after selection
+            if (screenSize < 450) {
+              $(onMainNavButtonPressed());
             }
           })
         })
