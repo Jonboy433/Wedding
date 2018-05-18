@@ -7,8 +7,8 @@
         </div>
         <nav class="main-nav-hidden" id="main-nav">
             <ul>
-                <li *ngIf="!isTablet()">
-                  <a routerLink="/" routerLinkActive="active">Our Wedding</a>
+                <li *ngIf="!isTablet()" routerLink="/" routerLinkActive="active">
+                  <a >Our Wedding</a>
                   <ul>
                     <li>
                       <a routerLink="/" fragment="the-wedding" routerLinkActive="active">The Wedding</a>
@@ -38,8 +38,8 @@
                 </li>
 
 
-                <li *ngIf="!isTablet()">
-                  <a routerLink="/details" routerLinkActive="active">Details</a>
+                <li *ngIf="!isTablet()" routerLink="/details" routerLinkActive="active">
+                  <a >Details</a>
                   <ul>
                     <li>
                       <a routerLink="/details" fragment='accommodations' routerLinkActive="active">Accommodations</a>
