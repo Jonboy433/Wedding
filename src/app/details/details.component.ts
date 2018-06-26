@@ -6,7 +6,7 @@ declare var $:any;
 
 @Component({
   selector: 'app-details',
-  templateUrl: './details.component.html',
+  templateUrl: './details.component-v2.html',
   styleUrls: ['./details.component.css'],
   encapsulation: ViewEncapsulation.None
 })
